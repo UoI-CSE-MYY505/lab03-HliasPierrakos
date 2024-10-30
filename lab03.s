@@ -112,7 +112,7 @@ columnLoop:
     andi t2, t2, 0xf8   # clear 3 lsbs
     slli t2, t2, 8      # shift to final place of R in RGB565 format
     andi t3, t3, 0xfc   # clear 2 lsbs
-    slli t3, t3, 3      # shift to final place of G in RGB565 format
+    slli t3, t3, 3      # shift to final place of G in RGB565 
     srli t4, t4, 3      # remove 3 lsbs of blue
     or   t2, t2, t3
     or   t2, t2, t4
